@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
 import 'package:hello_flutter/utils/uidata.dart';
 import 'package:hello_flutter/ui/page/home_page.dart';
 import 'package:hello_flutter/ui/page/notfound/notfound_page.dart';
@@ -27,7 +28,10 @@ class MyApp extends StatelessWidget {
     // routes
     routes: <String, WidgetBuilder>{
       UIData.homeRoute: (BuildContext context) => HomePage(),
-      UIData.notFoundRoute: (BuildContext context) => NotFoundPage()
+      UIData.notFoundRoute: (BuildContext context) => NotFoundPage(),
+      UIData.shoppingOneRoute: (BuildContext context) => ShoppingOnePage(),
+      // UIData.shoppingTwoRoute: () => ShoppingDetailsPage(),
+      // UIData.shoppingThreeRoute: () => ProductDetailPage()
     },
     onUnknownRoute: (RouteSettings rs) => new MaterialPageRoute(
         builder: (context) => new NotFoundPage(
