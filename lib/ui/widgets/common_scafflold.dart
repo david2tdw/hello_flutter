@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/ui/widgets/common_drawer.dart';
 import 'package:hello_flutter/utils/uidata.dart';
 
 class CommonScaffold extends StatelessWidget {
@@ -106,7 +107,7 @@ class CommonScaffold extends StatelessWidget {
           )
         ],
       ),
-      drawer: showDrawer ? null : null,
+      drawer: showDrawer ? CommonDrawer() : null,
       body: bodyData,
       floatingActionButton: showFAB? null:null,
       floatingActionButtonLocation: centerDocked? FloatingActionButtonLocation.centerDocked: FloatingActionButtonLocation.endFloat,
