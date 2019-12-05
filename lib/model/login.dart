@@ -8,5 +8,5 @@ class Login {
   Map<String, dynamic> toJson() => {
     'phonenumber': phonenumber,
     'otp': otp,
-  }
+  };
 }

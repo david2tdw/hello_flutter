@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
 import 'package:hello_flutter/utils/uidata.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
       UIData.shoppingOneRoute: (BuildContext context) => ShoppingOnePage(),
       // UIData.shoppingTwoRoute: () => ShoppingDetailsPage(),
       // UIData.shoppingThreeRoute: () => ProductDetailPage(),
+      UIData.loginOneRoute: (BuildContext context) => LoginPage(),
       UIData.loginTwoRoute: (BuildContext context) => LoginTwoPage(),
     },
     onUnknownRoute: (RouteSettings rs) => new MaterialPageRoute(

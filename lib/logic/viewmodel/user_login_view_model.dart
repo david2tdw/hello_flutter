@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/di/dependency_injection.dart';
 import 'package:hello_flutter/model/login.dart';
 import 'package:hello_flutter/model/otp.dart';
 import 'package:hello_flutter/services/abstract/i_otp_service.dart';
@@ -15,9 +16,9 @@ class UserLoginViewModel {
   UserLoginViewModel({@required this.phonenumber});
 
   // for login
-  UserLoginViewModel.withTOP({@required this.phonenumber, @required this.otp});
+  UserLoginViewModel.withOTP({@required this.phonenumber, @required this.otp});
 
-  Future<Null> getTOP(String phoneNumber) async {
+  Future<Null> getOtp(String phoneNumber) async {
     NetworkServieResponse<CreateOTPResponse> result = await otpRepo.createOTP(phonenumber);
     this.otpResult = result.success;
     this.apiResult = result;

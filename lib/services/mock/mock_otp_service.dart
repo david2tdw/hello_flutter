@@ -6,7 +6,7 @@ import 'package:hello_flutter/utils/uidata.dart';
 
 class MockOTPService implements IOTPService {
   @override
-  Future<NetworkServieResponse<CreateOTPResponse>> createTOP(
+  Future<NetworkServieResponse<CreateOTPResponse>> createOTP(
       String phoneNumber) async {
     await Future.delayed(Duration(seconds: 2));
     return Future.value(NetworkServieResponse(
