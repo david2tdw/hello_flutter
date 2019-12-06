@@ -12,7 +12,7 @@ class LoginBloc {
   final otpResultController = BehaviorSubject<bool>();
   Sink<UserLoginViewModel> get otpSink => otpController.sink;
   Sink<UserLoginViewModel> get loginSink => otpController.sink;
-  Sink<bool> get resnedOtpSink => otpResendController.sink;
+  Sink<bool> get resendOtpSink => otpResendController.sink;
   Stream<bool> get otpResult => otpResultController.stream;
   Stream<FetchProcess> get apiResult => apiController.stream;
 
@@ -45,7 +45,7 @@ class LoginBloc {
   }
 
   void resendOtp(bool flag) {
-    otpResendController.add(false);
+    otpResultController.add(false);
   }
 
   void dispose() {

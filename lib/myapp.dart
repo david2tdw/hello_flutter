@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
+import 'package:hello_flutter/utils/translations.dart';
 import 'package:hello_flutter/utils/uidata.dart';
 import 'package:hello_flutter/ui/page/home_page.dart';
 import 'package:hello_flutter/ui/page/notfound/notfound_page.dart';
@@ -18,15 +20,15 @@ class MyApp extends StatelessWidget {
     debugShowCheckedModeBanner: false,
     showPerformanceOverlay: false,
     home: HomePage(),
-    // localizationsDelegates: [
-    //     const TranslationsDelegate(),
-    //     GlobalMaterialLocalizations.delegate,
-    //     GlobalWidgetsLocalizations.delegate,
-    //   ],
-    //   supportedLocales: [
-    //     const Locale("en", "US"),
-    //     const Locale("hi", "IN"),
-    //   ],
+    localizationsDelegates: [
+        const TranslationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale("en", "US"),
+        const Locale("hi", "IN"),
+      ],
     // routes
     routes: <String, WidgetBuilder>{
       UIData.homeRoute: (BuildContext context) => HomePage(),

@@ -12,7 +12,7 @@ import 'package:hello_flutter/utils/translations.dart';
 
 class LoginCard extends StatefulWidget {
   @override
-  _LoginCardState createState() => _LoginCardState();
+  _LoginCardState createState() => new _LoginCardState();
 }
 
 class _LoginCardState extends State<LoginCard>
@@ -41,14 +41,14 @@ class _LoginCardState extends State<LoginCard>
                   style: new TextStyle(fontSize: 15.0, color: Colors.black),
                   decoration: new InputDecoration(
                     hintText: Translations.of(context).text("enter_code_hint"),
-                    labelText:
-                        Translations.of(context).text("enter_code_label"),
+                    labelText:Translations.of(context).text("enter_code_label"),
                     labelStyle: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ),
                 new SizedBox(
                   height: 10.0,
                 ),
+                
                 snapshot.data == false
                     ? new Offstage()
                     : new TextField(
@@ -61,6 +61,7 @@ class _LoginCardState extends State<LoginCard>
                               Translations.of(context).text("enter_otp_hint"),
                           labelText:
                               Translations.of(context).text("enter_otp_label"),
+
                           labelStyle: TextStyle(fontWeight: FontWeight.w700),
                         ),
                         obscureText: true,
@@ -92,7 +93,7 @@ class _LoginCardState extends State<LoginCard>
                         child: Text(
                           Translations.of(context).text("resend_otp"),
                         ),
-                        onPressed: () => loginBloc.resnedOtpSink.add(true),
+                        onPressed: () => loginBloc.resendOtpSink.add(true),
                       )
                     : new Container()
               ],
@@ -148,6 +149,7 @@ class _LoginCardState extends State<LoginCard>
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    deviceSize = MediaQuery.of(context).size;
+    return loginCard();
   }
 }
