@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
+import 'package:hello_flutter/ui/page/shopping/product_detail_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_details_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
 import 'package:hello_flutter/utils/translations.dart';
@@ -10,6 +11,8 @@ import 'package:hello_flutter/utils/uidata.dart';
 import 'package:hello_flutter/ui/page/home_page.dart';
 import 'package:hello_flutter/ui/page/notfound/notfound_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+
 
 class MyApp extends StatelessWidget {
   final materialApp = MaterialApp(
@@ -36,7 +39,7 @@ class MyApp extends StatelessWidget {
       UIData.notFoundRoute: (BuildContext context) => NotFoundPage(),
       UIData.shoppingOneRoute: (BuildContext context) => ShoppingOnePage(),
       UIData.shoppingTwoRoute: (BuildContext context) => ShoppingDetailsPage(),
-      // UIData.shoppingThreeRoute: () => ProductDetailPage(),
+      UIData.shoppingThreeRoute: (BuildContext context) => ProductDetailPage(),
       UIData.loginOneRoute: (BuildContext context) => LoginPage(),
       UIData.loginTwoRoute: (BuildContext context) => LoginTwoPage(),
     },
