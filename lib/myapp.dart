@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
+import 'package:hello_flutter/ui/page/payment/payment_success_page.dart';
 import 'package:hello_flutter/ui/page/shopping/product_detail_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_details_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
       UIData.shoppingThreeRoute: (BuildContext context) => ProductDetailPage(),
       UIData.loginOneRoute: (BuildContext context) => LoginPage(),
       UIData.loginTwoRoute: (BuildContext context) => LoginTwoPage(),
+      UIData.paymentTwoRoute : (BuildContext context) => PaymentSuccessPage(),
     },
     onUnknownRoute: (RouteSettings rs) => new MaterialPageRoute(
         builder: (context) => new NotFoundPage(
