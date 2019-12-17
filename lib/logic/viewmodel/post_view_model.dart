@@ -23,11 +23,11 @@ class PostViewModel {
             likesCount: 123,
             commentsCount: 78,
             messageImage:
-                "https://cdn.pixabay.com/photo/2016/04/10/21/34/woman-1320810_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2018/03/09/16/32/woman-3211957_1280.jpg",
             message:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             personImage:
-                "https://cdn.pixabay.com/photo/2016/04/10/21/34/woman-1320810_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2018/03/09/16/32/woman-3211957_1280.jpg",
             postTime: "5h ago"),
         Post(
             personName: "Eric",
@@ -103,11 +103,11 @@ class PostViewModel {
             likesCount: 123,
             commentsCount: 78,
             messageImage:
-                "https://cdn.pixabay.com/photo/2016/04/10/21/34/woman-1320810_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2018/03/09/16/32/woman-3211957_1280.jpg",
             message:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             personImage:
-                "https://cdn.pixabay.com/photo/2016/04/10/21/34/woman-1320810_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2018/03/09/16/32/woman-3211957_1280.jpg",
             postTime: "5h ago"),
         Post(
             personName: "Neha",

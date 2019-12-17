@@ -10,6 +10,7 @@ import 'package:hello_flutter/ui/page/shopping/product_detail_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_details_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
 import 'package:hello_flutter/ui/page/timeline/timeline_one_page.dart';
+import 'package:hello_flutter/ui/page/timeline/timeline_two_page.dart';
 import 'package:hello_flutter/utils/translations.dart';
 import 'package:hello_flutter/utils/uidata.dart';
 import 'package:hello_flutter/ui/page/home_page.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
       UIData.loginOneRoute: (BuildContext context) => LoginPage(),
       UIData.loginTwoRoute: (BuildContext context) => LoginTwoPage(),
       UIData.timelineOneRoute: (BuildContext context) => TimelineOnePage(),
+      UIData.timelineTwoRoute: (BuildContext context) => TimelineTwoPage(),
       UIData.settingsOneRoute: (BuildContext context) => SettingsOnePage(),
       UIData.paymentOneRoute: (BuildContext context) => CreditCardPage(),
       UIData.paymentTwoRoute : (BuildContext context) => PaymentSuccessPage(),
