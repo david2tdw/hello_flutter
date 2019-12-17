@@ -42,7 +42,8 @@ class _TimelineTwoPageState extends State<TimelineTwoPage> {
                 backgroundImage: NetworkImage(
                   post.personImage,
                 ),
-              )
+              ),
+              rightColumn(post),
             ],
           ),
         ),
