@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:hello_flutter/ui/page/douban/home_scene.dart';
 import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
 import 'package:hello_flutter/ui/page/payment/credit_card_page.dart';
@@ -52,6 +53,8 @@ class MyApp extends StatelessWidget {
       UIData.settingsOneRoute: (BuildContext context) => SettingsOnePage(),
       UIData.paymentOneRoute: (BuildContext context) => CreditCardPage(),
       UIData.paymentTwoRoute : (BuildContext context) => PaymentSuccessPage(),
+      UIData.doubanHome: (BuildContext context) => HomeScene(),
+      // UIData.doubanHome: (BuildContext context) => PaymentSuccessPage(),
     },
     onUnknownRoute: (RouteSettings rs) => new MaterialPageRoute(
         builder: (context) => new NotFoundPage(

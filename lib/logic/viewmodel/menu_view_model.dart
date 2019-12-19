@@ -62,6 +62,12 @@ class MenuViewModel {
           icon: Icons.payment,
           image: UIData.paymentImage,
           items: ["Credit Card", "Payment Success", "Payment 3", "Payment 4"]),
+      Menu(
+          title: "DouBan",
+          menuColor: Color(0xffddcec2),
+          icon: Icons.movie,
+          image: UIData.verifyImage,
+          items: ["DouBan Home",]),
     ];
   }
 }
