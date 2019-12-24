@@ -6,6 +6,8 @@ import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
 import 'package:hello_flutter/ui/page/payment/credit_card_page.dart';
 import 'package:hello_flutter/ui/page/payment/payment_success_page.dart';
+import 'package:hello_flutter/ui/page/profile/profile_one_page.dart';
+import 'package:hello_flutter/ui/page/profile/profile_two_page.dart';
 import 'package:hello_flutter/ui/page/settings/setting_one_page.dart';
 import 'package:hello_flutter/ui/page/shopping/product_detail_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_details_page.dart';
@@ -42,6 +44,8 @@ class MyApp extends StatelessWidget {
     // routes
     routes: <String, WidgetBuilder>{
       UIData.homeRoute: (BuildContext context) => HomePage(),
+      UIData.profileOneRoute: (BuildContext context) => ProfileOnePage(),
+      UIData.profileTwoRoute: (BuildContext context) => ProfileTwoPage(),
       UIData.notFoundRoute: (BuildContext context) => NotFoundPage(),
       UIData.shoppingOneRoute: (BuildContext context) => ShoppingOnePage(),
       UIData.shoppingTwoRoute: (BuildContext context) => ShoppingDetailsPage(),
