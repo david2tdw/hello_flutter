@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/ui/page/douban/home_list_view.dart';
 import 'package:hello_flutter/utils/uidata.dart';
 
 class HomeScene extends StatefulWidget {
@@ -32,9 +33,10 @@ class _HomeSceneState extends State<HomeScene> {
           ),
         ],
       ),
-      body: Container(
-        color: Colors.yellow,
-      ),
+      // body: Container(
+      //   color: Colors.yellow,
+      // ),
+      body: HomeListView(),
     );
   }
 }
