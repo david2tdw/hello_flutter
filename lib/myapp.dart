@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hello_flutter/ui/page/dashboard/dashboard_one/dashboard_one_page.dart';
+import 'package:hello_flutter/ui/page/dashboard/dashboard_two/dashboard_two_page.dart';
 import 'package:hello_flutter/ui/page/douban/home_scene.dart';
 import 'package:hello_flutter/ui/page/login/login_page.dart';
 import 'package:hello_flutter/ui/page/login/login_two_page.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
       UIData.timelineOneRoute: (BuildContext context) => TimelineOnePage(),
       UIData.timelineTwoRoute: (BuildContext context) => TimelineTwoPage(),
       UIData.dashboardOneRoute: (BuildContext context) => DashboardOnePage(),
+      UIData.dashboardTwoRoute: (BuildContext context) => DashBoardTwoPage(),
       UIData.settingsOneRoute: (BuildContext context) => SettingsOnePage(),
       UIData.paymentOneRoute: (BuildContext context) => CreditCardPage(),
       UIData.paymentTwoRoute : (BuildContext context) => PaymentSuccessPage(),
