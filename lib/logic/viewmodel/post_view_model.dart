@@ -13,7 +13,7 @@ class PostViewModel {
             message:
                 "Google Developer Expert for Flutter. Passionate #Flutter, #Android Developer. #Entrepreneur #YouTuber",
             personImage:
-                "https://avatars0.githubusercontent.com/u/12619420?s=460&v=4",
+                "https://cdn.pixabay.com/photo/2019/12/05/11/10/snowman-4674856_960_720.jpg",
             messageImage:
                 "https://cdn.pixabay.com/photo/2018/03/09/16/32/woman-3211957_1280.jpg",
             postTime: "Just Now"),
@@ -71,7 +71,7 @@ class PostViewModel {
             message:
                 "Google Developer Expert for Flutter. Passionate #Flutter, #Android Developer. #Entrepreneur #YouTuber",
             personImage:
-                "https://avatars0.githubusercontent.com/u/12619420?s=460&v=4",
+                "https://cdn.pixabay.com/photo/2019/12/05/11/10/snowman-4674856_960_720.jpg",
             messageImage:
                 "https://cdn.pixabay.com/photo/2018/03/09/16/32/woman-3211957_1280.jpg",
             postTime: "Just Now"),
