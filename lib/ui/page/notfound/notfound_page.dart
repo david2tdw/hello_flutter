@@ -1,6 +1,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:hello_flutter/ui/widgets/common_scafflold.dart';
+import 'package:hello_flutter/ui/widgets/profile_tile.dart';
 
 class NotFoundPage extends StatelessWidget {
   final appTitle;
@@ -19,11 +21,32 @@ class NotFoundPage extends StatelessWidget {
     this.iconColor = Colors.black
   });
 
-  Widget bodyData() => Center();
+  Widget bodyData() => Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Icon(
+          icon,
+          size: 100.0,
+          color: iconColor,
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        ProfileTile(
+          title: title,
+          subtitle: message,
+        )
+      ],
+    ),
+  );
   @override
   Widget build(BuildContext context) {
-    return Container(
-
+    return CommonScaffold(
+      appTitle: appTitle,
+      bodyData: bodyData(),
+      showDrawer: false,
+      showFAB: false,
     );
   }
 }
