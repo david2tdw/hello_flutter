@@ -33,6 +33,15 @@ dependencies:
   cached_network_image: ^2.0.0-rc
   flutter_webview_plugin: ^0.3.10
   share: ^0.6.0
+  # wan android
+  # https://github.com/Sky24n/common_utils
+  common_utils: ^1.1.3
+  # https://github.com/Sky24n/flustars
+  flustars: ^0.2.5+1
+  # https://github.com/flutterchina/flukit.
+  flukit: ^1.0.2
+  # https://pub.dev/packages/json_serializable
+  json_serializable: ^3.2.5
   flutter_localizations:
     sdk: flutter
 dev_dependencies:

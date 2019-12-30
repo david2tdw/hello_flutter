@@ -24,6 +24,8 @@ class UIData {
 
   static const String doubanHome = "/DouBan Home";
 
+  static const String wanAndroidHome = "/Wan android Home";
+  
   //strings
   static const String appName = "Flutter UIKit";
 
@@ -47,6 +49,7 @@ class UIData {
   static const String timelineImage = "$imageDir/timeline.jpeg";
   static const String verifyImage = "$imageDir/verification.jpg";
 
+  static const String aliConnorsImage = "$imageDir/ali_connors.jpg";
   //login
   static const String enter_code_label = "Phone Number";
   static const String enter_code_hint = "10 Digit Phone Number";
