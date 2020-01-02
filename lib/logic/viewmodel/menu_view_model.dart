@@ -67,13 +67,17 @@ class MenuViewModel {
           menuColor: Color(0xffddcec2),
           icon: Icons.movie,
           image: UIData.verifyImage,
-          items: ["DouBan Home",]),
-          Menu(
-          title: "Wan android",
+          items: [
+            "DouBan Home",
+          ]),
+      Menu(
+          title: "BLOC",
           menuColor: Color(0xffddcec2),
           icon: Icons.movie,
           image: UIData.verifyImage,
-          items: ["Wan android Home",]),
+          items: [
+            "Wan android Home", "Bloc Arch", "Random user",
+          ]),
     ];
   }
 }

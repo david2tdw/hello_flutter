@@ -3,7 +3,7 @@ import 'package:hello_flutter/model/models.dart';
 import 'package:hello_flutter/ui/widgets/like_btn.dart';
 
 class ArticleItem extends StatelessWidget {
-  final ReposModel model;
+  final ArticleModel model;
 
   final String labelId;
   final bool isHome;

@@ -1,9 +1,17 @@
+// 每个model单独写个文件否则不好引用
 
 class BannerModel {
   String title;
   int id;
   String url;
   String imagePath;
+
+  BannerModel({
+    this.title,
+    this.id,
+    this.url,
+    this.imagePath,
+  });
 
   BannerModel.fromJson(Map<String, dynamic> json)
       : title = json['title'],
@@ -30,7 +38,7 @@ class BannerModel {
   }
 }
 
-class ReposModel {
+class ArticleModel {
   int id;
   int originId;
   String title;
@@ -46,7 +54,7 @@ class ReposModel {
   int type; //1项目，2文章
   bool isShowHeader;
 
-  ReposModel.fromJson(Map<String, dynamic> json)
+  ArticleModel.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         originId = json['originId'],
         title = json['title'],

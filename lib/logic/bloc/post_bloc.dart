@@ -13,7 +13,9 @@ class PostBloc {
   Stream<bool> get fabVisible => fabVisibleController.stream;
 
   PostBloc() {
+    // 获取数据
     postController.add(postViewModel.getPosts());
+    // 向流添加一个订阅事件
     fabController.stream.listen(onScroll);
   }
 

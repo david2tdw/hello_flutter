@@ -1,15 +1,15 @@
 class WanAndroidApi {
   /// 首页banner http://www.wanandroid.com/banner/json
-  static const String BANNER = "banner";
+  static const String BANNER = "banner/json";
 
   /// 最新项目tab (首页的第二个tab) http://wanandroid.com/article/listproject/0/json
-  static const String ARTICLE_LISTPROJECT = "article/listproject";
+  static const String ARTICLE_LISTPROJECT = "article/list/0/json";
 
   /// 项目分类 http://www.wanandroid.com/project/tree/json
-  static const String PROJECT_TREE = "project/tree";
+  static const String PROJECT_TREE = "project/tree/json";
 
   /// 项目列表数据 http://www.wanandroid.com/project/list/1/json?cid=294
-  static const String PROJECT_LIST = "project/list";
+  static const String PROJECT_LIST = "project/list/1/json?cid=294";
 
   /// 体系数据 http://www.wanandroid.com/tree/json
   static const String TREE = "tree";

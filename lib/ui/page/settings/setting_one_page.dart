@@ -6,6 +6,7 @@ import 'package:hello_flutter/utils/uidata.dart';
 class SettingsOnePage extends StatelessWidget {
   Widget bodyData() => SingleChildScrollView(
         child: Theme(
+          // Create a unique theme with "ThemeData", 重新定义主题
           data: ThemeData(
             fontFamily: UIData.ralewayFont,
           ),

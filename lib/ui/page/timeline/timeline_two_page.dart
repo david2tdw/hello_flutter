@@ -25,7 +25,9 @@ class _TimelineTwoPageState extends State<TimelineTwoPage> {
   }
 
   Widget bodyList(List<Post> posts) => ListView.builder(
+    // ScrollController controller,
     controller: scrollController,
+    // 只有当索引大于或等于0且小于itemCount时，才会调用itemBuilder回调
     itemCount: posts.length,
     itemBuilder: (context, i) {
       Post post = posts[i];
