@@ -68,7 +68,8 @@ class ApiClient {
         baseUrl: baseUrl,
         connectTimeout: 10000,
         receiveTimeout: 100000,
-        contentType: ContentType.json,
+        // contentType: ContentType.json,
+        contentType: 'application/json',
         queryParameters: {
           "apikey": apiKey,
         });

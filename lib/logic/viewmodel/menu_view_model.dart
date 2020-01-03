@@ -76,7 +76,7 @@ class MenuViewModel {
           icon: Icons.movie,
           image: UIData.verifyImage,
           items: [
-            "Wan android Home", "Bloc Arch", "Random user",
+            "Wan android Home", "Bloc Arch", "Random user", "GSY trending",
           ]),
     ];
   }

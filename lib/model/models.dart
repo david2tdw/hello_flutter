@@ -12,13 +12,14 @@ class BannerModel {
     this.url,
     this.imagePath,
   });
-
+  // API返回数据 映射到对象
   BannerModel.fromJson(Map<String, dynamic> json)
       : title = json['title'],
         id = json['id'],
         url = json['url'],
         imagePath = json['imagePath'];
 
+  // 对象转换为json数据
   Map<String, dynamic> toJson() => {
         'title': title,
         'id': id,

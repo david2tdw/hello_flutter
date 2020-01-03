@@ -18,6 +18,7 @@ import 'package:hello_flutter/ui/page/shopping/shopping_details_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_one_page.dart';
 import 'package:hello_flutter/ui/page/timeline/timeline_one_page.dart';
 import 'package:hello_flutter/ui/page/timeline/timeline_two_page.dart';
+import 'package:hello_flutter/ui/page/trending/trend_page.dart';
 import 'package:hello_flutter/ui/page/wanandroid/wan_home_page_new.dart';
 import 'package:hello_flutter/utils/translations.dart';
 import 'package:hello_flutter/utils/uidata.dart';
@@ -70,10 +71,11 @@ class MyApp extends StatelessWidget {
       UIData.paymentTwoRoute: (BuildContext context) => PaymentSuccessPage(),
       UIData.doubanHome: (BuildContext context) => HomeScene(),
       // UIData.wanAndroidHome: (BuildContext context) => WanMainPage(),
+
       // UIData.wanAndroidHome: (BuildContext context) => WanHomePageNew(),
-      UIData.wanAndroidHome: (BuildContext context) => WanHomePageNew(),
       UIData.blocArch: (BuildContext context) => BlocArch(),
       UIData.randomUser: (BuildContext context) => UserWidget(),
+      UIData.gsyTrending: (BuildContext context) => TrendPage(),
       // UIData.doubanHome: (BuildContext context) => PaymentSuccessPage(),
     },
     onUnknownRoute: (RouteSettings rs) => new MaterialPageRoute(

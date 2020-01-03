@@ -27,6 +27,7 @@ class UIData {
   static const String wanAndroidHome = "/Wan android Home";
   static const String blocArch = '/Bloc Arch';
   static const String randomUser = '/Random user';
+  static const String gsyTrending = '/GSY trending';
 
   //strings
   static const String appName = "Flutter UIKit";
