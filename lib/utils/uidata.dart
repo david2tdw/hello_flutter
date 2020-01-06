@@ -29,6 +29,10 @@ class UIData {
   static const String randomUser = '/Random user';
   static const String gsyTrending = '/GSY trending';
 
+  static const String reduxCounter = '/Redux Counter';
+  static const String reduxApp = '/Redux App';
+
+  
   //strings
   static const String appName = "Flutter UIKit";
 

@@ -12,6 +12,7 @@ import 'package:hello_flutter/ui/page/payment/payment_success_page.dart';
 import 'package:hello_flutter/ui/page/profile/profile_one_page.dart';
 import 'package:hello_flutter/ui/page/profile/profile_two_page.dart';
 import 'package:hello_flutter/ui/page/randomuser/ui/user_widget.dart';
+import 'package:hello_flutter/ui/page/redux_count/redux_count.dart';
 import 'package:hello_flutter/ui/page/settings/setting_one_page.dart';
 import 'package:hello_flutter/ui/page/shopping/product_detail_page.dart';
 import 'package:hello_flutter/ui/page/shopping/shopping_details_page.dart';
@@ -77,6 +78,7 @@ class MyApp extends StatelessWidget {
       UIData.randomUser: (BuildContext context) => UserWidget(),
       UIData.gsyTrending: (BuildContext context) => TrendPage(),
       // UIData.doubanHome: (BuildContext context) => PaymentSuccessPage(),
+      UIData.reduxCounter: (BuildContext context) => ReduxCounter(),
     },
     onUnknownRoute: (RouteSettings rs) => new MaterialPageRoute(
         builder: (context) => new NotFoundPage(
