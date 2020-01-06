@@ -7,3 +7,10 @@ A new Flutter project.
 ```
 flutter run
 ```
+
+
+json_serializable使用：
+
+```
+flutter packages pub run build_runner build
+```

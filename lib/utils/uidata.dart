@@ -100,6 +100,9 @@ class UIData {
   static Color blue = Color(0xFF3688FF);
   static Color golden = Color(0xff8B7961);
 
+  // gsy
+  static const String FONT_FAMILY = 'wxcIconFont';
+
   //randomcolor
   static final Random _random = new Random();
 
