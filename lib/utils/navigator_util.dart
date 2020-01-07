@@ -12,4 +12,14 @@ class NavigatorUtil {
     }
     Navigator.push(context, new CupertinoPageRoute(builder: (ctx) => page));
   }
+
+  //主页
+  static goHome(BuildContext context) {
+    Navigator.pushReplacementNamed(context, "home");
+  }
+
+  //登录页
+  static goLogin(BuildContext context){
+    Navigator.pushReplacementNamed(context, "login");
+  }
 }
