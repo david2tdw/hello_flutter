@@ -32,6 +32,7 @@ class UIData {
   static const String reduxCounter = '/Redux Counter';
   static const String reduxApp = '/Redux App';
 
+  static const String deerHome = '/Deer Home';
   
   //strings
   static const String appName = "Flutter UIKit";

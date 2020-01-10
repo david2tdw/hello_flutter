@@ -86,6 +86,14 @@ class MenuViewModel {
           items: [
             "Redux Counter", "Redux App", 
           ]),
+          Menu(
+          title: "Deer",
+          menuColor: Color(0xffddcec2),
+          icon: Icons.movie,
+          image: UIData.verifyImage,
+          items: [
+            "Deer Home", "todo...", 
+          ]),
     ];
   }
 }
